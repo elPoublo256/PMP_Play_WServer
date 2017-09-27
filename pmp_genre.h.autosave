@@ -1,0 +1,14 @@
+#ifndef PMP_GENRE_H
+#define PMP_GENRE_H
+#include <QString>
+
+class PMP_Genre
+{
+private:
+    QString GenreName;
+public:
+    PMP_Genre(const QString& NName, ){GenreName=NName;}
+    QString retGenreName(){return GenreName;}
+};
+
+#endif // PMP_GENRE_H

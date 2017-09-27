@@ -1,21 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <author/>
- <comment/>
- <exportmacro/>
  <class>AdminPanelForm</class>
  <widget class="QWidget" name="AdminPanelForm">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>1089</width>
+    <height>692</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <widget class="QPushButton" name="addCompazition">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>221</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Compozition</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addAlbom">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>50</y>
+     <width>221</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Albom</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addGroup">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>90</y>
+     <width>221</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Group</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addGenre">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>130</y>
+     <width>221</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Genre</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="UserlistWidget">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>60</y>
+     <width>311</width>
+     <height>381</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cickClient">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>30</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cick Client</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>90</y>
+     <width>171</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Block Client</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>160</y>
+     <width>171</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>unBlock Client</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>230</y>
+     <width>171</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BUNE FOR EVER</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>20</y>
+     <width>181</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>List of Users</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listTopCom">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>60</y>
+     <width>256</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Новый элемент</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Новый элемент</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Новый элемент</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Новый элемент</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Новый элемент</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QListWidget" name="listTopAlb">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>240</y>
+     <width>256</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Новый элемент</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Новый элемент</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Новый элемент</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Новый элемент</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Новый элемент</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QListWidget" name="listTopGr">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>420</y>
+     <width>256</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Новый элемент</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Новый элемент</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Новый элемент</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Новый элемент</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Новый элемент</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>30</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>top Compazitions</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>200</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>top Alboms</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>318</x>
+     <y>380</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>top Groups</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="upTopTreckList">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>590</y>
+     <width>88</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="UpUserList">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>380</y>
+     <width>171</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>UpDate userList</string>
+   </property>
+  </widget>
  </widget>
- <pixmapfunction/>
+ <resources/>
  <connections/>
 </ui>

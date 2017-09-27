@@ -14,9 +14,17 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    myserver.cpp
+    myserver.cpp \
+    adminpanelform.cpp \
+    pmp_user.cpp \
+    pmp_group.cpp
 
 HEADERS  += mainwindow.h \
-    myserver.h
+    myserver.h \
+    adminpanelform.h \
+    pmp_user.h \
+    pmp_genre.h \
+    pmp_group.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    adminpanelform.ui
