@@ -2,7 +2,7 @@
 #define PMP_GROUP_H
 
 
-class PMP_Group : public PMP_Genre
+class PMP_Group
 {
 public:
     PMP_Group();

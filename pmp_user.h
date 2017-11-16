@@ -1,6 +1,6 @@
 #ifndef PMP_USER_H
 #define PMP_USER_H
-
+#include <QObject>
 
 class PMP_User : public QObject
 {

@@ -23,14 +23,18 @@ MyServer::MyServer(int nPort, QWidget *pwgt) : QWidget(pwgt), m_nNextBlockSize(0
  void MyServer::slotNewConnection()
 {
     QTcpSocket* pClientSocket = m_ptcpServer->nextPendingConnection();
-    connect(pClientSocket,SIGNAL(disconnected()),pClientSocket,SLOT(deleteLater()));
-    connect(pClientSocket,SIGNAL(readyRead()), this, SLOT(slotReadClient()));
-    sendToClient(pClientSocket,"Server Response: Connected!");
+    int userID;
+    userID=pClientSocket->socketDescriptor();
+    SClients[userID]=pClientSocket;
+    connect(SClients[userID],SIGNAL(disconnected()),pClientSocket,SLOT(deleteLater()));
+    connect(SClients[userID],SIGNAL(readyRead()), this, SLOT(slotReadClient()));
+    sendToClient(SClients[userID],"Server Response: Connected!");
 }
 
  void MyServer::slotReadClient()
  {
      QTcpSocket* pClientSocket = (QTcpSocket*)sender();
+
      QDataStream in(pClientSocket);
      in.setVersion(QDataStream::Qt_4_2);
      for(;;)
