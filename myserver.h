@@ -8,6 +8,8 @@
 #include <QTime>
 #include <QMap>
 #include <QFile>
+#include <QDataStream>
+
 class MyServer : public QWidget
 {
     Q_OBJECT
@@ -23,7 +25,6 @@ private:
     void sendToClient(QTcpSocket* pSocket, const QString& str);
 public:
     MyServer(int nPort, QWidget* pwgt = 0);
-    void setFileToClient();
 
 public slots:
     virtual void slotNewConnection();

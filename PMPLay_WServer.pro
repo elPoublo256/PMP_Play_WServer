@@ -17,14 +17,18 @@ SOURCES += main.cpp\
     myserver.cpp \
     adminpanelform.cpp \
     pmp_user.cpp \
-    pmp_group.cpp
+    pmp_group.cpp \
+    pmpserver.cpp \
+    pmp_metadatebase.cpp
 
 HEADERS  += mainwindow.h \
     myserver.h \
     adminpanelform.h \
     pmp_user.h \
     pmp_genre.h \
-    pmp_group.h
+    pmp_group.h \
+    pmpserver.h \
+    pmp_metadatebase.h
 
 FORMS    += mainwindow.ui \
     adminpanelform.ui
